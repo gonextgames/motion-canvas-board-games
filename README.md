@@ -3,6 +3,8 @@
 
 This package helps you create animations about board games.
 
+![A Spinning Card](spinGif.gif "Spinning Card")
+
 ## Usage
 
 ```
