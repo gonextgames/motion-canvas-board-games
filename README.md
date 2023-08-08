@@ -5,11 +5,12 @@ This package helps you create animations about board games.
 
 ## Usage
 
-```
+```typescript
 include {Card} from "motion-canvas-board-games"
 ...
-var thing = <Card frontSrc={CapsAndHammers.actionCaps.admiral} backSrc={CapsAndHammers.actionCaps.back} position={new Vector2(10,10)} width={825/4} height={1125/4} rotation={0} initialFlipState={0}/>
+var thing = <Card frontSrc="frontImageSrc" backSrc="backImageSrc" width={825/4} height={1125/4} rotation={0} initialFlipState={0}/>
 yield mainRef().add(thing)
+
 var card = thing as Card
 yield* card.flip(1)
 ```
