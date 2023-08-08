@@ -1,10 +1,16 @@
 {
   "extends": "@motion-canvas/2d/tsconfig.project.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2015",
+    "target": "ES2015",
+    "module": "ES2020",
+    "noEmit": false,
+    "strict": false,
     "declaration": true,
-    "outDir": "./dist"
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
   },
-  "include": ["src", "vite.config.ts"]
+  "include": [
+    "./src"
+  ]
 }
