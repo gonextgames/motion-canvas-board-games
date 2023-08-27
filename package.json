@@ -1,7 +1,7 @@
 {
   "name": "motion-canvas-board-games",
   "description": "Components that make board game videos easy.",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "scripts": {
     "serve": "vite",
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
@@ -11,7 +11,8 @@
   "dependencies": {
     "@motion-canvas/2d": "^3.10.1",
     "@motion-canvas/core": "^3.10.0",
-    "@motion-canvas/ffmpeg": "^1.1.0"
+    "@motion-canvas/ffmpeg": "^1.1.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@motion-canvas/ui": "^3.10.0",
