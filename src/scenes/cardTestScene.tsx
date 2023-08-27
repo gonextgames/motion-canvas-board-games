@@ -13,21 +13,21 @@ export default makeScene2D(function* (view) {
   var ref = createRef<Card>()
   yield mainRef().add(<Card ref={ref} frontSrc={front} backSrc={back} width={825/4} height={1125/4} rotation={0} x={0} y={0} initialFlipState={1}/>)
   yield* ref().rotation(90,1)
-  yield* ref().flip(1)
-  yield* ref().flip(1)
+  yield* ref().flipState(0,1)
+  yield* ref().flipState(1,1)
 
   yield* ref().size(new Vector2(825,1125),1) 
-  // yield* ref().rotation(0,1)
-  // yield* ref().flip(1)
-  // yield* ref().flip(1)
+  yield* ref().rotation(0,1)
+  yield* ref().flipState(0,1)
+  yield* ref().flipState(1,1)
 
   yield* all(
     yield ref().width(825/4,1),
     yield ref().height(1125/4,1)
   )
-  // yield* ref().rotation(90,1)
-  // yield* ref().flip(1)
-  // yield* ref().flip(1)
+  yield* ref().rotation(90,1)
+  yield* ref().flipState(0,1)
+  yield* ref().flipState(1,1)
 
-  // yield* waitFor(5);
+  yield* waitFor(1);
 });
